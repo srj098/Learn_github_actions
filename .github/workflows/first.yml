@@ -7,7 +7,7 @@ jobs:
       name: first-job
       runs-on: windows-latest
       steps:
-         -name: Step one
-          uses: actions/checkout@v4
-         -name: Step two
-          run "Get-Children Env: | Sort-Object Name"
+         - name: Step one
+           uses: actions/checkout@v4 
+         - name: Step two
+           run:  "Get-Children Env: | Sort-Object Name"
